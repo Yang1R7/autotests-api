@@ -1,18 +1,11 @@
 # Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-
-# IDE
-.idea/
-
-# Coverage and test artifacts
 .pytest_cache/
-.coverage
-htmlcov/
-build/
-dist/
+
+# IDE (PyCharm)
+.idea/
+*.iml
+
+# Virtual Environment
+venv/
