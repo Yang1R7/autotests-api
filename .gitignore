@@ -1,11 +1,10 @@
+# IDE files
+.idea/
+.vscode/
+
 # Python
 __pycache__/
 *.pyc
-.pytest_cache/
-
-# IDE (PyCharm)
-.idea/
-*.iml
-
-# Virtual Environment
+.Python/
 venv/
+env/
