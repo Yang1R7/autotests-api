@@ -1,0 +1,16 @@
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
+from tools.assertions.base import assert_equal
+
+
+def assert_create_response(request: CreateUserRequestSchema, response:CreateUserResponseSchema):
+    """
+    Проверяет, что ответ на создание пользователя соответствует запросу.
+
+    :param request: Исходный запрос на создание пользователя.
+    :param response: Ответ API с данными пользователя.
+    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    """
+    assert_equal(response.user.email, request.email, "email")
+    assert_equal(response.user.last_name, request.email, "last_name")
+    assert_equal(response.user.first_name, request.email, "first_name")
+    assert_equal(response.user.middle_name, request.email, "middle_name")
