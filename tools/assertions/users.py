@@ -11,6 +11,6 @@ def assert_create_response(request: CreateUserRequestSchema, response:CreateUser
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
     assert_equal(response.user.email, request.email, "email")
-    assert_equal(response.user.last_name, request.email, "last_name")
-    assert_equal(response.user.first_name, request.email, "first_name")
-    assert_equal(response.user.middle_name, request.email, "middle_name")
+    assert_equal(response.user.last_name, request.last_name, "last_name")
+    assert_equal(response.user.first_name, request.first_name, "first_name")
+    assert_equal(response.user.middle_name, request.middle_name, "middle_name")
