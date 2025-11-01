@@ -18,15 +18,11 @@ class UserFixture(BaseModel):
     @property
     def password(self):
         return self.request.password
+
     #
     @property
     def authentication_user(self) -> AuthenticationUserSchema:
         return AuthenticationUserSchema(email=self.email, password=self.password)
-
-
-@pytest.fixture
-def authentication_client() -> AuthenticationClient:
-    return get_authentication_client()
 
 
 @pytest.fixture

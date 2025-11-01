@@ -6,7 +6,7 @@ from clients.authentication.authentication_schema import LoginRequestSchema, Log
 from clients.users.public_users_client import get_public_users_client, CreateUserRequestSchema, \
     CreateUserResponseSchema, PublicUsersClient
 from clients.authentication.authentication_client import get_authentication_client, AuthenticationClient
-from tests.conftest import UserFixture
+from fixtures.users import UserFixture
 from tools.assertions.assert_login_response import assert_login_response
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
