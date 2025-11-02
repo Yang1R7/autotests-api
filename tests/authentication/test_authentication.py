@@ -14,10 +14,11 @@ from tools.assertions.schema import validate_json_schema
 
 @pytest.mark.regression
 @pytest.mark.authentication
-def test_login(function_user: UserFixture, authentication_client: AuthenticationClient):
-    request = LoginRequestSchema(email=function_user.email, password=function_user.password)
-    response = authentication_client.login_api(request=request)
-    response_data = LoginResponseSchema.model_validate_json(response.text)
-    assert_status_code(response.status_code, HTTPStatus.OK)
-    assert_login_response(response=response_data)
-    validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
+class TestAuthentication:
+    def test_login(self, function_user: UserFixture, authentication_client: AuthenticationClient):
+        request = LoginRequestSchema(email=function_user.email, password=function_user.password)
+        response = authentication_client.login_api(request=request)
+        response_data = LoginResponseSchema.model_validate_json(response.text)
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_login_response(response=response_data)
+        validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
