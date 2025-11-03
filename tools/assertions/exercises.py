@@ -1,9 +1,12 @@
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
-    ExercisesSchema, GetExerciseResponseSchema
+    ExercisesSchema, GetExerciseResponseSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema
 from tools.assertions.base import assert_equal
 
 
-def assert_create_exercise_response(actual: CreateExerciseResponseSchema, expected: CreateExerciseRequestSchema):
+def assert_create_exercise_response(
+        actual: CreateExerciseResponseSchema,
+        expected: CreateExerciseRequestSchema
+):
     """
     Проверяет, что ответ на создание задания соответствует данным из запроса.
     :param actual: Ответ API с созданным заданием.
@@ -19,7 +22,10 @@ def assert_create_exercise_response(actual: CreateExerciseResponseSchema, expect
     assert_equal(actual.exercise.estimated_time, expected.estimated_time, "estimated_time")
 
 
-def assert_exercise(actual: ExercisesSchema, expected: ExercisesSchema):
+def assert_exercise(
+        actual: ExercisesSchema,
+        expected: ExercisesSchema
+):
     """
     Проверяет, что фактические данные задания соответствуют ожидаемым.
 
@@ -49,3 +55,16 @@ def assert_get_exercise_response(
     :raises AssertionError: Если данные задания не совпадают.
     """
     assert_exercise(actual=get_exercise_response.exercise, expected=create_exercise_response.exercise)
+
+
+def assert_update_exercise_response(
+        actual: UpdateExerciseResponseSchema,
+        expected:UpdateExerciseRequestSchema
+):
+    assert_equal(actual.exercise.title, expected.title,"title")
+    assert_equal(actual.exercise.max_score, expected.max_score, "max_score")
+    assert_equal(actual.exercise.min_score, expected.min_score, "min_score")
+    assert_equal(actual.exercise.order_index, expected.order_index, "order_index")
+    assert_equal(actual.exercise.description, expected.description, "description")
+    assert_equal(actual.exercise.estimated_time, expected.estimated_time, "estimated_time")
+
