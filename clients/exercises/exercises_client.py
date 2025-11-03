@@ -6,7 +6,7 @@ from httpx import Response
 from clients.api_client import APIClient
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
 
-from clients.exercises.exercises_schema import (GetExercisesSchema, GetExerciseResponseSchema
+from clients.exercises.exercises_schema import (GetExercisesQuerySchema, GetExerciseResponseSchema
 , GetExercisesResponseSchema, CreateExerciseRequestSchema, CreateExerciseResponseSchema, UpdateExerciseRequestSchema,
                                                 UpdateExerciseResponseSchema)
 
@@ -15,7 +15,7 @@ class ExercisesClient(APIClient):
     """
     Клиент для работы с /api/v1/exercises
     """
-    def get_exercises_api(self,query: GetExercisesSchema) -> Response:
+    def get_exercises_api(self,query: GetExercisesQuerySchema) -> Response:
         """
     Метод получения всех упражнений курса.
     :query param: Словарь с courseid.
@@ -56,7 +56,7 @@ class ExercisesClient(APIClient):
     """
         return self.delete(f"/api/v1/exercises/{exercise_id}")
 
-    def get_exercises(self,query: GetExercisesSchema) -> GetExercisesResponseSchema:
+    def get_exercises(self,query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
         response = self.get_exercises_api(query=query)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 

@@ -62,4 +62,3 @@ class GetUserResponseSchema(BaseModel):
     user: UserSchema
 
 
-print(CreateUserRequestSchema())

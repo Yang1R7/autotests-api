@@ -11,8 +11,8 @@ def assert_status_code(actual: int, expected: int):
     """
     assert actual == expected, (
         "Incorrect response status code. "
-        f"Expected status code: {actual}. "
-        f"Actual status code: {expected}"
+        f"Expected status code: {expected}. "
+        f"Actual status code: {actual}"
     )
 
 
@@ -27,8 +27,8 @@ def assert_equal(actual: Any, expected: Any, name: str):
     """
     assert actual == expected, (
         f'Incorrect: "{name}".'
-        f'Expected value: {actual}, '
-        f'Actual value: {expected}'
+        f'Expected value: {expected}, '
+        f'Actual value: {actual}'
     )
 
 
