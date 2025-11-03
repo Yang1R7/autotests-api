@@ -28,8 +28,9 @@ class TestCourses:
         response_data = GetCoursesResponseSchema.model_validate_json(response.text)
 
         assert_status_code(response.status_code, HTTPStatus.OK)
-        assert_get_courses_response(get_courses_response=response_data,
-                                    create_course_response=[function_courses.response])
+        assert_get_courses_response(
+            get_courses_response=response_data,
+            create_course_response=[function_courses.response])
 
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 
@@ -44,10 +45,15 @@ class TestCourses:
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 
     def test_create_course(self, courses_client: CoursesClient, function_file: FileFixture, function_user: UserFixture):
-        request = CreateCourseRequestSchema(previewFileId=function_file.response.file.id,
-                                            createdByUserId=function_user.response.user.id)
+        request = CreateCourseRequestSchema(
+            preview_file_id=function_file.response.file.id,
+            created_by_user_id=function_user.response.user.id)
+
         response = courses_client.create_course_api(request=request)
         response_data = CreateCourseResponseSchema.model_validate_json(response.text)
+
         assert_status_code(response.status_code, HTTPStatus.OK)
         assert_create_course_response(actual=response_data, expected=request)
+
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
+

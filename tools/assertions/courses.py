@@ -74,7 +74,7 @@ def assert_create_course_response(actual: CreateCourseResponseSchema, expected:C
     assert_equal(actual.course.description, expected.description, "description")
     assert_equal(actual.course.estimated_time, expected.estimated_time, "estimated_time")
     # Проверяем соответствие preview_file_id
-    assert_equal(actual.course.preview_file.id,expected.preview_fileId, "preview_file_id")
+    assert_equal(actual.course.preview_file.id,expected.preview_file_id, "preview_file_id")
     # Проверяем соответствие created_by_user_id
     assert_equal(actual.course.created_by_user.id,expected.created_by_user_id, "created_by_user_id")
 

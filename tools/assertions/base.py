@@ -27,8 +27,8 @@ def assert_equal(actual: Any, expected: Any, name: str):
     """
     assert actual == expected, (
         f'Incorrect: "{name}".'
-        f'Expected value: {expected}, '
-        f'Actual value: {actual}'
+        f'Expected value: {actual}, '
+        f'Actual value: {expected}'
     )
 
 

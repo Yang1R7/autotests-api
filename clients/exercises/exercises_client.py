@@ -29,7 +29,7 @@ class ExercisesClient(APIClient):
     :path param: Словарь с  идентификатор  упражнения exercise_id.
     :return: Ответ от сервера в виде объекта httpx.Response
     """
-        return self.get(f"/api/v1/exercises{exercise_id}")
+        return self.get(f"/api/v1/exercises/{exercise_id}")
 
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
@@ -54,7 +54,7 @@ class ExercisesClient(APIClient):
     :param: Словарь с path параметром идентификатору упражнения exercise_id.
     :return: Ответ от сервера в виде объекта httpx.Response
     """
-        return self.patch(f"/api/v1/exercises/{exercise_id}")
+        return self.delete(f"/api/v1/exercises/{exercise_id}")
 
     def get_exercises(self,query: GetExercisesSchema) -> GetExercisesResponseSchema:
         response = self.get_exercises_api(query=query)
