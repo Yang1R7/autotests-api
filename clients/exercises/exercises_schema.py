@@ -30,7 +30,7 @@ class GetExerciseResponseSchema(BaseModel):
     """
     Описание структуры ответа конкретного упражнения курса.
     """
-    exercises: ExercisesSchema
+    exercise: ExercisesSchema
 
 
 class GetExercisesSchema(BaseModel):
