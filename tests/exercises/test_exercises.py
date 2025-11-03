@@ -2,6 +2,7 @@ from http import HTTPStatus
 
 import pytest
 
+from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_client import ExercisesClient
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
     GetExercisesSchema, GetExerciseResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
@@ -9,7 +10,7 @@ from fixtures.courses import CoursesFixture
 from fixtures.exercises import ExerciseFixture
 from tools.assertions.base import assert_status_code
 from tools.assertions.exercises import assert_create_exercise_response, assert_get_exercise_response, \
-    assert_update_exercise_response
+    assert_update_exercise_response, assert_exercise_not_found_response
 from tools.assertions.schema import validate_json_schema
 
 
@@ -53,10 +54,28 @@ class TestExercises:
         request = UpdateExerciseRequestSchema()
         exercise_id = function_exercise.response.exercise.id
 
-        response = exercises_client.update_exercise_api(request=request,exercise_id=exercise_id)
+        response = exercises_client.update_exercise_api(request=request, exercise_id=exercise_id)
         response_data = UpdateExerciseResponseSchema.model_validate_json(response.text)
 
         assert_status_code(response.status_code, HTTPStatus.OK)
         assert_update_exercise_response(actual=response_data, expected=request)
 
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
+
+    def test_delete_exercise(
+            self,
+            exercises_client: ExercisesClient,
+            function_exercise: ExerciseFixture
+    ):
+        exercise_id = function_exercise.response.exercise.id
+
+        delete_response = exercises_client.delete_exercise_api(exercise_id=exercise_id)
+        assert_status_code(delete_response.status_code, HTTPStatus.OK)
+
+        get_response = exercises_client.get_exercise_api(exercise_id=exercise_id)
+        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
+
+        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
+        assert_exercise_not_found_response(actual=get_response_data)
+
+        validate_json_schema(instance=get_response.json(), schema=get_response_data.model_json_schema())
