@@ -3,8 +3,10 @@ from clients.courses.course_schema import UpdateCourseResponseSchema, UpdateCour
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
+import allure
 
 
+@allure.step("Check update course response")
 def assert_update_course_response(
         request: UpdateCourseRequestSchema,
         response: UpdateCourseResponseSchema):
@@ -22,7 +24,8 @@ def assert_update_course_response(
     assert_equal(actual=response.course.estimated_time, expected=request.estimated_time, name="estimated_time")
 
 
-def assert_courses(actual: CourseSchema, expected:CourseSchema):
+@allure.step("Check course")
+def assert_courses(actual: CourseSchema, expected: CourseSchema):
     """
     Проверяет, что фактические данные курса соответствуют ожидаемым.
 
@@ -42,9 +45,7 @@ def assert_courses(actual: CourseSchema, expected:CourseSchema):
     assert_user(actual.created_by_user, expected.created_by_user)
 
 
-
-
-
+@allure.step("Check get courses response")
 def assert_get_courses_response(
         get_courses_response: GetCoursesResponseSchema,
         create_course_response: list[CreateCourseResponseSchema]
@@ -61,7 +62,8 @@ def assert_get_courses_response(
         assert_courses(get_courses_response.courses[index], create_course_response.course)
 
 
-def assert_create_course_response(actual: CreateCourseResponseSchema, expected:CreateCourseRequestSchema):
+@allure.step("Check create course response")
+def assert_create_course_response(actual: CreateCourseResponseSchema, expected: CreateCourseRequestSchema):
     """
     Проверяет, что ответ на создание курса соответствует данным из запроса.
     :param actual: Исходный запрос на создание курса.
@@ -74,8 +76,6 @@ def assert_create_course_response(actual: CreateCourseResponseSchema, expected:C
     assert_equal(actual.course.description, expected.description, "description")
     assert_equal(actual.course.estimated_time, expected.estimated_time, "estimated_time")
     # Проверяем соответствие preview_file_id
-    assert_equal(actual.course.preview_file.id,expected.preview_file_id, "preview_file_id")
+    assert_equal(actual.course.preview_file.id, expected.preview_file_id, "preview_file_id")
     # Проверяем соответствие created_by_user_id
-    assert_equal(actual.course.created_by_user.id,expected.created_by_user_id, "created_by_user_id")
-
-
+    assert_equal(actual.course.created_by_user.id, expected.created_by_user_id, "created_by_user_id")

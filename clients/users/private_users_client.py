@@ -1,3 +1,4 @@
+import allure
 from httpx import Response
 from typing import TypedDict, Optional
 
@@ -11,7 +12,7 @@ class PrivateUsersClient(APIClient):
     """
     Клиент для работы с /api/v1/users
     """
-
+    @allure.step("Get user me")
     def get_user_me_api(self) -> Response:
         return self.get("/api/v1/users/me")
 
@@ -20,6 +21,7 @@ class PrivateUsersClient(APIClient):
     :return: Ответ от сервера в виде объекта httpx.Response
     """
 
+    @allure.step("Get user by id {user_id}")
     def get_user_api(self, user_id: str) -> Response:
         return self.get(f"/api/v1/users/{user_id}")
 
@@ -29,6 +31,7 @@ class PrivateUsersClient(APIClient):
     :return: Ответ от сервера в виде объекта httpx.Response
     """
 
+    @allure.step("Update user by id {user_id}")
     def update_user_api(self, user_id: str, request: UpdateRequestSchema) -> Response:
         return self.patch(f"/api/v1/users/{user_id}", json=request.model_dump(by_alias=True))
 
@@ -39,6 +42,7 @@ class PrivateUsersClient(APIClient):
     :return: Ответ от сервера в виде объекта httpx.Response
     """
 
+    @allure.step("Delete user by id {user_id}")
     def delete_user_api(self, user_id: str) -> Response:
         return self.delete(f"/api/v1/users/{user_id}")
 

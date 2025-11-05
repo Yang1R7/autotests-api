@@ -1,3 +1,4 @@
+import allure
 import httpx
 from typing import TypedDict
 
@@ -15,14 +16,17 @@ class ExercisesClient(APIClient):
     """
     Клиент для работы с /api/v1/exercises
     """
-    def get_exercises_api(self,query: GetExercisesQuerySchema) -> Response:
+
+    @allure.step("Get exercises")
+    def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
     Метод получения всех упражнений курса.
     :query param: Словарь с courseid.
     :return: Ответ от сервера в виде объекта httpx.Response
     """
-        return self.get("/api/v1/exercises",params=query.model_dump(by_alias=True))
+        return self.get("/api/v1/exercises", params=query.model_dump(by_alias=True))
 
+    @allure.step("Get exercise")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
     Метод получения упражнения по exercise_id из курса.
@@ -31,15 +35,17 @@ class ExercisesClient(APIClient):
     """
         return self.get(f"/api/v1/exercises/{exercise_id}")
 
+    @allure.step("Create exercise")
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
     Метод создания упражнения курса.
     :param : request: Словарь с, title, courseId, maxScore, minScore ,orderIndex, description ,estimatedTime
     :return: Ответ от сервера в виде объекта httpx.Response
     """
-        return self.post('/api/v1/exercises',json=request.model_dump(by_alias=True))
+        return self.post('/api/v1/exercises', json=request.model_dump(by_alias=True))
 
-    def update_exercise_api(self,exercise_id: str, request:UpdateExerciseRequestSchema) -> Response:
+    @allure.step("Update exercise")
+    def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> Response:
         """
     Метод обновления упражнения курса по идентификатору  упражнения exercise_id.
     :param: request: Словарь с, title, maxScore, minScore ,orderIndex, description ,estimatedTime,
@@ -48,6 +54,7 @@ class ExercisesClient(APIClient):
     """
         return self.patch(f"/api/v1/exercises/{exercise_id}", json=request.model_dump(by_alias=True))
 
+    @allure.step("Delete exercise")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
     Метод удаления упражнения курса по идентификатору  упражнения exercise_id .
@@ -56,11 +63,11 @@ class ExercisesClient(APIClient):
     """
         return self.delete(f"/api/v1/exercises/{exercise_id}")
 
-    def get_exercises(self,query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
+    def get_exercises(self, query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
         response = self.get_exercises_api(query=query)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
-    def get_exercise(self,exercise_id: str) -> GetExerciseResponseSchema:
+    def get_exercise(self, exercise_id: str) -> GetExerciseResponseSchema:
         response = self.get_exercise_api(exercise_id=exercise_id)
         return GetExerciseResponseSchema.model_validate_json(response.text)
 
@@ -68,12 +75,12 @@ class ExercisesClient(APIClient):
         response = self.create_exercise_api(request=request)
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 
-    def update_exercise(self,exercise_id: str, request:UpdateExerciseRequestSchema) -> UpdateExerciseResponseSchema:
+    def update_exercise(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> UpdateExerciseResponseSchema:
         response = self.update_exercise_api(exercise_id=exercise_id, request=request)
         return UpdateExerciseResponseSchema.model_validate_json(response.text)
 
 
-def get_exercise_client(user:AuthenticationUserSchema) -> ExercisesClient:
+def get_exercise_client(user: AuthenticationUserSchema) -> ExercisesClient:
     """
     Функция создаёт экземпляр ExercisesClient с уже настроенным HTTP-клиентом.
     :return: Готовый к использованию ExercisesClient.
