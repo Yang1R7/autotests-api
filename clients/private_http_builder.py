@@ -4,15 +4,15 @@ from functools import lru_cache
 
 from clients.authentication.authentication_client import get_authentication_client
 
-
 from clients.authentication.authentication_schema import LoginRequestSchema
+from config import settings
+from event_hooks import curl_event_hook
 
 
 class AuthenticationUserSchema(BaseModel):
     model_config = ConfigDict(frozen=True)
     email: str
     password: str
-
 
 
 @lru_cache(maxsize=None)
@@ -26,6 +26,7 @@ def get_private_http_client(user: AuthenticationUserSchema) -> Client:
     login_request = LoginRequestSchema(email=user.email, password=user.password)
     login_response = authentication_client.login(request=login_request)
     return Client(
-        timeout=100,
-        base_url="http://localhost:8000",
-        headers={"Authorization": f"Bearer {login_response.token.access_token}"})
+        timeout=settings.http_client.timeout,
+        base_url=settings.http_client.client_url,
+        headers={"Authorization": f"Bearer {login_response.token.access_token}", },
+        event_hooks={"request": [curl_event_hook]})

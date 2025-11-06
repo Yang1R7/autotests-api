@@ -26,7 +26,7 @@ class ExercisesClient(APIClient):
     """
         return self.get("/api/v1/exercises", params=query.model_dump(by_alias=True))
 
-    @allure.step("Get exercise")
+    @allure.step("Get exercise by id {exercise_id}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
     Метод получения упражнения по exercise_id из курса.
@@ -44,7 +44,7 @@ class ExercisesClient(APIClient):
     """
         return self.post('/api/v1/exercises', json=request.model_dump(by_alias=True))
 
-    @allure.step("Update exercise")
+    @allure.step("Update exercise by id {exercise_id}")
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> Response:
         """
     Метод обновления упражнения курса по идентификатору  упражнения exercise_id.
@@ -54,7 +54,7 @@ class ExercisesClient(APIClient):
     """
         return self.patch(f"/api/v1/exercises/{exercise_id}", json=request.model_dump(by_alias=True))
 
-    @allure.step("Delete exercise")
+    @allure.step("Delete exercise by id {exercise_id}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
     Метод удаления упражнения курса по идентификатору  упражнения exercise_id .
