@@ -6,6 +6,7 @@ from clients.api_client import APIClient
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 
 from clients.users.users_schema import UpdateRequestSchema, GetUserResponseSchema
+from tools.routes import APIRoutes
 
 
 class PrivateUsersClient(APIClient):
@@ -14,7 +15,7 @@ class PrivateUsersClient(APIClient):
     """
     @allure.step("Get user me")
     def get_user_me_api(self) -> Response:
-        return self.get("/api/v1/users/me")
+        return self.get(f"{APIRoutes.USERS}/me")
 
     """
     Метод получения текущего пользователя.
@@ -23,7 +24,7 @@ class PrivateUsersClient(APIClient):
 
     @allure.step("Get user by id {user_id}")
     def get_user_api(self, user_id: str) -> Response:
-        return self.get(f"/api/v1/users/{user_id}")
+        return self.get(f"{APIRoutes.USERS}/{user_id}")
 
     """
     Метод получения пользователя по идентификатору.
@@ -33,7 +34,7 @@ class PrivateUsersClient(APIClient):
 
     @allure.step("Update user by id {user_id}")
     def update_user_api(self, user_id: str, request: UpdateRequestSchema) -> Response:
-        return self.patch(f"/api/v1/users/{user_id}", json=request.model_dump(by_alias=True))
+        return self.patch(f"{APIRoutes.USERS}/{user_id}", json=request.model_dump(by_alias=True))
 
     """
     Метод обновления пользователя по идентификатору.
@@ -44,7 +45,7 @@ class PrivateUsersClient(APIClient):
 
     @allure.step("Delete user by id {user_id}")
     def delete_user_api(self, user_id: str) -> Response:
-        return self.delete(f"/api/v1/users/{user_id}")
+        return self.delete(f"{APIRoutes.USERS}/{user_id}")
 
     """
     Метод удаления пользователя по идентификатору.
