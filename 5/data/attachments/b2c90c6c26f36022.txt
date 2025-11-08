@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjU1OjM3Ljc1ODkyMSIsInVzZXJfaWQiOiJiYjcyZmE1Mi1mNTkxLTRlMGMtYmQ3Yi1iZjFkMmZjM2Q2NzgifQ.u92dBRSBVumVbTJXGjabIv-TurcIh3wzxTxQ6DR4fO8' \
+  -H 'content-length: 291' \
+  -H 'content-type: application/json' \
+  -d '{"title":"To billion step policy also and next.","maxScore":57,"minScore":27,"description":"Law attention outside positive man. Product office prepare.","estimatedTime":"7 weeks","previewFileId":"be168c70-1c9f-4d52-ab7c-60ddf77a16fd","createdByUserId":"bb72fa52-f591-4e0c-bd7b-bf1d2fc3d678"}'

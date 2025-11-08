@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjU1OjM4Ljk0MDg3OCIsInVzZXJfaWQiOiIwYTUzZmU4Mi05MThlLTQwYTMtYTlmMi0zOThhYmJiMTA0MjMifQ.IX0WyCeTQ0F4T8d-0iPhbfnE4wF5MnXPhS682mtTl38' \
+  -H 'content-length: 381' \
+  -H 'content-type: application/json' \
+  -d '{"title":"What production manage language dog party plant.","maxScore":85,"minScore":4,"description":"Mrs shake bill floor. Agreement set Democrat tell.\nReach professional star successful husband focus result. Second always doctor seem age.","estimatedTime":"7 weeks","previewFileId":"a863c088-b093-4bb1-a1d1-f43490820573","createdByUserId":"0a53fe82-918e-40a3-a9f2-398abbb10423"}'

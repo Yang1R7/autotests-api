@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjU1OjM5Ljg2MDQ0NCIsInVzZXJfaWQiOiIyYjhjY2YxOS1kYWNkLTQ0NjktOTgyMC02M2FhNjcwODIwYjAifQ.fvRtVFqeraazibocLwHHq0KMIn_sRbrtNl408-f8KQc' \
+  -H 'content-length: 333' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Rate as anything win nation sit.","courseId":"2ce16971-ba09-44a4-b2ba-f05327c14fed","maxScore":99,"minScore":18,"orderIndex":31,"description":"Herself hand travel else. Green affect opportunity race explain. Increase include development security.\nAdministration everybody decade east official.","estimatedTime":"10 weeks"}'

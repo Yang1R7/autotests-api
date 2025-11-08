@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/0fc21c2b-b5a2-4866-83a1-07e761c86e3d' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjU1OjM2LjMzNjQ0MSIsInVzZXJfaWQiOiIzOGM2Y2ZkYi03NGUzLTQyMmYtODU1NC04NTA2MDZmMTBjZDAifQ.JJ8QH0jltOrm8bTm0SugibReCNy_g11jIOat73pG33c' \
+  -H 'content-length: 235' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sport box instead car central between.","maxScore":77,"minScore":5,"description":"Practice television west technology hand factor team.\nAppear answer be responsibility. Which break mean be around.","estimatedTime":"6 weeks"}'

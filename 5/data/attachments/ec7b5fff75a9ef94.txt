@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjU1OjM4LjY2ODA0NSIsInVzZXJfaWQiOiI3MDM4Yjg3Yi0wYTllLTRiYjgtOGU2ZS1iMjYyZDRhMzgzODUifQ.k6Cj0EqCW8oOpE5laoloNbZS40Q42jmhc6ZgM_EhYXQ' \
+  -H 'content-length: 407' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Surface window series receive station really response.","maxScore":87,"minScore":6,"description":"Crime reach trip much six west voice. Local begin behavior table.\nMouth job issue. News far after order. Three society how treat poor. My between art threat.","estimatedTime":"10 weeks","previewFileId":"e237e38c-cd8c-43a8-897f-7fe50ce4112f","createdByUserId":"7038b87b-0a9e-4bb8-8e6e-b262d4a38385"}'

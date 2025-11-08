@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjU1OjQxLjA5MjQ5NSIsInVzZXJfaWQiOiIxNDI0MGZlZC00YzA0LTQ0NjgtOTIwMC0xNDI1YjZkZTNhNTgifQ.lbyexboHgTg-kH27h6ORjSZbDCe4s4j36_GtEybkMHQ' \
+  -H 'content-length: 431' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Answer voice as religious PM meeting.","maxScore":50,"minScore":2,"description":"What perform place kid analysis administration we. Will fact weight page me point. Clearly woman after.\nBetter before ever many. Inside movement PM sing city board truth. Action our game even wonder.","estimatedTime":"1 weeks","previewFileId":"c9d1fbe1-cf33-47e8-9f03-bd82b36f5e64","createdByUserId":"14240fed-4c04-4468-9200-1425b6de3a58"}'

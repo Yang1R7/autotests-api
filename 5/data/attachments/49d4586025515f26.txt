@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjU1OjM5Ljg2MDQ0NCIsInVzZXJfaWQiOiIyYjhjY2YxOS1kYWNkLTQ0NjktOTgyMC02M2FhNjcwODIwYjAifQ.fvRtVFqeraazibocLwHHq0KMIn_sRbrtNl408-f8KQc' \
+  -H 'content-length: 400' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Democratic almost institution song.","maxScore":93,"minScore":6,"description":"Pretty TV wonder court not number. Simply huge home. Data any bank international.\nOil risk treat man sport without work. Fact cost experience character must task likely.","estimatedTime":"10 weeks","previewFileId":"686e3a34-74c6-4f6f-abe1-f583357539c6","createdByUserId":"2b8ccf19-dacd-4469-9820-63aa670820b0"}'
