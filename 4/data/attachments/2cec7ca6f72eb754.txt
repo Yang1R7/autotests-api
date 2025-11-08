@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjQxOjM2LjQ4MjAxMyIsInVzZXJfaWQiOiJkYTRjNjFlMC0wYzkyLTQ5MmUtODNjMy1lM2YxMTRmNzBkYmUifQ.q8bmfi4Mp0uwLBdawCKc41uat2wkl87_q0sfFahkfjg' \
+  -H 'content-length: 338' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Voice seat meet quality stop guy arrive.","maxScore":62,"minScore":25,"description":"Identify yourself increase away election law rule. Head himself nearly she per yes. Board behind start.","estimatedTime":"2 weeks","previewFileId":"e21248c8-66a6-42e1-b7ab-020f0a390692","createdByUserId":"da4c61e0-0c92-492e-83c3-e3f114f70dbe"}'

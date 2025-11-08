@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjQxOjM1LjUzOTIzMyIsInVzZXJfaWQiOiI4NmU2MWRmZS1kN2Q4LTRlNmQtOGI1MC0xOTIzNmE2NWFjMWUifQ.w6fNfXnnalO1zUOmYH6lXgHhcXDHUFF21GkNNbMjuK8' \
+  -H 'content-length: 367' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Down follow official general look hotel medical.","maxScore":82,"minScore":9,"description":"Knowledge skill give peace. Point trade present continue national officer read. Race early energy young car soldier language.","estimatedTime":"3 weeks","previewFileId":"86379ca7-386a-4310-a4db-6a07854a830d","createdByUserId":"86e61dfe-d7d8-4e6d-8b50-19236a65ac1e"}'

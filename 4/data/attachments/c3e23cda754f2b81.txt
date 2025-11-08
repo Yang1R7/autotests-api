@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjQxOjMyLjkwMjU1NCIsInVzZXJfaWQiOiJiZGQ1NDkzZi1kMWVlLTQ5ZTQtODJlYS02NzI4NjBiNWViNjgifQ.kgBJynStMx1sEsgUjZS6tDFrxTbTI3jSmPQVzWmcXiw' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Person agreement forward when.","maxScore":60,"minScore":21,"description":"Product toward follow left myself kid. Fine trial subject treatment. Better media middle choice political film can.\nThought ball western free always everything unit. Weight manage join rest.","estimatedTime":"6 weeks","previewFileId":"51821777-d23c-41be-bcfb-a7b3e8ef6e0d","createdByUserId":"bdd5493f-d1ee-49e4-82ea-672860b5eb68"}'

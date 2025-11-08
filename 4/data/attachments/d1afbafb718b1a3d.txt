@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/5acfb06c-bde6-48a9-90d5-675226000cfd' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjQxOjM0LjM1NzgzMSIsInVzZXJfaWQiOiIwMTM3YjlkNi03MDFmLTQxMmEtYjI5Yi05MDRjNTdlOTVjZDAifQ.U72gBNrK4XDFV-ghuVArxgS_XcwLdNRqMcaxRlSllq4' \
+  -H 'content-length: 278' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Section few law his.","maxScore":58,"minScore":9,"orderIndex":52,"description":"By drop street among. Feeling such behavior pattern that.\nThough heavy light. Especially thank generation reflect field magazine. Thus house as film difficult.","estimatedTime":"6 weeks"}'

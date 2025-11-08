@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjQxOjM0LjM1NzgzMSIsInVzZXJfaWQiOiIwMTM3YjlkNi03MDFmLTQxMmEtYjI5Yi05MDRjNTdlOTVjZDAifQ.U72gBNrK4XDFV-ghuVArxgS_XcwLdNRqMcaxRlSllq4' \
+  -H 'content-length: 292' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Prevent its mean television store back.","maxScore":62,"minScore":1,"description":"Could line situation natural later. Example something grow.","estimatedTime":"5 weeks","previewFileId":"c3c2147f-0fab-4363-9c42-c41774b400b3","createdByUserId":"0137b9d6-701f-412a-b29b-904c57e95cd0"}'

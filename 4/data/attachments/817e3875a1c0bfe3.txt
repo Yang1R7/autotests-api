@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjQxOjM1LjI2NzA3NyIsInVzZXJfaWQiOiIwNjM2MzI3MC1iNGRmLTRmOWUtOTYyMy1jOTYwYThhNjNkNDEifQ.mVyqKS4lJCH-qTAroJCFrkj2dV_wT2RHRDHHNSRvoew' \
+  -H 'content-length: 336' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Prepare of show decision.","courseId":"a0df15ec-3716-42da-b08f-5f556408f8f4","maxScore":93,"minScore":17,"orderIndex":51,"description":"Focus bring great bank Republican oil. Sport art three alone say sister act. Consumer water hard amount.\nChoice research team. Understand behind future pressure.","estimatedTime":"9 weeks"}'

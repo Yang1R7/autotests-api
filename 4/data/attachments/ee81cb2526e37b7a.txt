@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:78 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Party hot this stage all hot green.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 69
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 18
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Run think people note some. Police head fly material site participant. Peace production product.
+Soldier front involve debate. Near company kitchen trip season necessary ahead. Land free artist skin.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 3 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 950a1792-4ffb-49ae-92e4-7be2417a52ca
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 5b00cb8f-3f6b-4e51-960d-9636d9d0d267
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

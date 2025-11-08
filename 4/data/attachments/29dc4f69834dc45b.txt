@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE3OjQxOjM1LjI2NzA3NyIsInVzZXJfaWQiOiIwNjM2MzI3MC1iNGRmLTRmOWUtOTYyMy1jOTYwYThhNjNkNDEifQ.mVyqKS4lJCH-qTAroJCFrkj2dV_wT2RHRDHHNSRvoew' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Nature hold service table act.","maxScore":82,"minScore":20,"description":"Floor speech seat green feel. Forget study fine group more man road.\nWorker should language say whatever. Stock audience each she which nor. Analysis check rate near someone your.","estimatedTime":"2 weeks","previewFileId":"7a213615-0b0f-48a8-adab-b5c5c8d35769","createdByUserId":"06363270-b4df-4f9e-9623-c960a8a63d41"}'
