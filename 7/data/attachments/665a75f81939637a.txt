@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE4OjM4OjMwLjYzOTY4OSIsInVzZXJfaWQiOiJhMWM2MmQzZi0zODk4LTQ3MWEtOTIzMS02NWE2MGZlMjdkNjkifQ.Sbgn3aeeD4448rLRnw4yxAo813TK47vQTYSTEfjpoG4' \
+  -H 'content-length: 411' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Only impact think model our her town trouble.","maxScore":79,"minScore":5,"description":"Material voice push physical. Once herself should order. Pull talk white real despite word professor.\nMe wonder bit attack quality. Low hit enjoy war approach wish appear.","estimatedTime":"1 weeks","previewFileId":"427a6568-cd16-49dd-ad23-66815a37e97a","createdByUserId":"a1c62d3f-3898-471a-9231-65a60fe27d69"}'

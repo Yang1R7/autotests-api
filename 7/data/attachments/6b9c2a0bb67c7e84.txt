@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE4OjM4OjM0LjMxNDM2NCIsInVzZXJfaWQiOiJmNWM1ZTU4MS1mYmI3LTQ2ZGMtODI4NC03ZGI2M2M0MmZhNDUifQ.WPRZ0wGHRxgE3mMQmvn1XRiwtdCi8NaryM6RhF4y-KM' \
+  -H 'content-length: 302' \
+  -H 'content-type: application/json' \
+  -d '{"title":"On do perform back.","maxScore":91,"minScore":9,"description":"Car picture while. Employee data notice station. Public international focus recent later.","estimatedTime":"7 weeks","previewFileId":"9175410a-0dec-470e-9f55-e7f16f85a7a4","createdByUserId":"f5c5e581-fbb7-46dc-8284-7db63c42fa45"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/c600a245-5d42-4487-a576-cbcedd51c29b' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE4OjM4OjMwLjYzOTY4OSIsInVzZXJfaWQiOiJhMWM2MmQzZi0zODk4LTQ3MWEtOTIzMS02NWE2MGZlMjdkNjkifQ.Sbgn3aeeD4448rLRnw4yxAo813TK47vQTYSTEfjpoG4' \
+  -H 'content-length: 286' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Itself rise difficult movie light.","maxScore":60,"minScore":25,"description":"Challenge usually note experience order. Place may kitchen so.\nCollection training seat anyone world trade huge. Why clear team.\nCertain rise head left change pattern.","estimatedTime":"6 weeks"}'

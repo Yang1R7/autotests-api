@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE4OjM4OjMzLjA1MzEzNCIsInVzZXJfaWQiOiI0NTI2YTY5My01N2UzLTRkOTAtYTU1My0zNjZjM2UwYmJmMjQifQ.wJEEAy01gzk4V_d9d42ylQaqwcaBCiBNYb6I4WABanQ' \
+  -H 'content-length: 396' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Allow easy plan.","maxScore":56,"minScore":23,"description":"Thousand foot final. Prepare forward understand. Enough possible sometimes item. Particular TV least entire scene.\nNice level recent whom. Increase remember rule reason against within.","estimatedTime":"1 weeks","previewFileId":"726d8eae-d474-4aeb-b306-42c0b0fb6d75","createdByUserId":"4526a693-57e3-4d90-a553-366c3e0bbf24"}'
