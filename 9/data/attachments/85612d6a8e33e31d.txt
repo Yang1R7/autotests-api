@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:78 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Summer require help offer create.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 71
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 9
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Table shoulder woman religious challenge long sort listen. Feeling enough food high wish.
+Issue left actually family appear. Mr day country but writer summer. Find institution model onto crime gun.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 1 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to d26471ba-0c92-4971-829b-ce3f3119d058
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to ad90fb49-ecac-4998-acc6-0fa1b0d4cb42
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

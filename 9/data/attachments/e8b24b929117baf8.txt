@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE4OjUwOjA3Ljk3MTY1MyIsInVzZXJfaWQiOiI1MGVmYTFjZS1mODczLTQzZTctOTg2OS02ZjRjM2NjZmUwODUifQ.CzRagp7jQQoAip1emHCntQlVBtPgYOw55BzAqh1Z294' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Affect heart position career mother.","maxScore":74,"minScore":14,"description":"International land police price strategy their. Big surface most become. Itself might hand sign position.\nToo world yet form together study. Certain put time professor painting happen.","estimatedTime":"1 weeks","previewFileId":"192cdbed-17aa-4f0b-a14d-81f7ac9f6dea","createdByUserId":"50efa1ce-f873-43e7-9869-6f4c3ccfe085"}'

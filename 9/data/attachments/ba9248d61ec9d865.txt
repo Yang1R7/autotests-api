@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTA4VDE4OjUwOjA2Ljc5NDU2NSIsInVzZXJfaWQiOiJhZDkwZmI0OS1lY2FjLTQ5OTgtYWNjNi0wZmExYjBkNGNiNDIifQ.W3EgB4WOm0GYvI8DH2VPVt6xISZJMxg6qR4dNuQ0e84' \
+  -H 'content-length: 425' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Summer require help offer create.","maxScore":71,"minScore":9,"description":"Table shoulder woman religious challenge long sort listen. Feeling enough food high wish.\nIssue left actually family appear. Mr day country but writer summer. Find institution model onto crime gun.","estimatedTime":"1 weeks","previewFileId":"d26471ba-0c92-4971-829b-ce3f3119d058","createdByUserId":"ad90fb49-ecac-4998-acc6-0fa1b0d4cb42"}'
