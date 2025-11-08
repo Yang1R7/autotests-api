@@ -7,4 +7,7 @@ __pycache__/
 *.pyc
 .Python/
 venv/
-env/
+
+# allure
+allure-results
+allure-report
