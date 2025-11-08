@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Clone test server  repository
+      - name: Clone  test server  repository
         run: git clone https://github.com/Nikita-Filonov/qa-automation-engineer-api-course.git
 
       - name: Install tests server dependencies
