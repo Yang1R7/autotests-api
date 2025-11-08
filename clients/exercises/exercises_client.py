@@ -62,7 +62,7 @@ class ExercisesClient(APIClient):
     :param: Словарь с path параметром идентификатору упражнения exercise_id.
     :return: Ответ от сервера в виде объекта httpx.Response
     """
-        return self.delete(f"{APIRoutes.EXERCISES}  /{exercise_id}")
+        return self.delete(f"{APIRoutes.EXERCISES}/{exercise_id}")
 
     def get_exercises(self, query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
         response = self.get_exercises_api(query=query)
