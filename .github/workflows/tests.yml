@@ -54,16 +54,16 @@ jobs:
           restore-keys: |
             coverage-history-
 
+      - name: Generate Coverage report
+        run: |
+          swagger-coverage-tool save-report      
+
       - name: Cache Coverage  history
         if: always()
         uses: actions/cache/save@v4
         with:
           path: coverage-history.json
           key: coverage-history-${{ github.run_id }}
-
-      - name: Generate Coverage report
-        run: |
-          swagger-coverage save-report
 
       - name: Upload coverage report
         if: always()
