@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjE0OjMwLjcxNTMxMyIsInVzZXJfaWQiOiJhYWEzZDI5MC0yNmJmLTQ4ODMtYmFhNy01MzlkNzVjZmI5ODQifQ.48PnBSMLF3kV39VGCAeq9gnhHySi8FGYI0YlKYDXirQ' \
+  -H 'content-length: 426' \
+  -H 'content-type: application/json' \
+  -d '{"title":"How experience maybe rise approach now.","maxScore":96,"minScore":15,"description":"Family bar step ability figure. Open task daughter particular rule. Leader middle serve official interview hear.\nNot eight them produce later because. Direction memory price forget hope ball.","estimatedTime":"2 weeks","previewFileId":"07249cb1-8e35-4308-ae79-c4002c97886d","createdByUserId":"aaa3d290-26bf-4883-baa7-539d75cfb984"}'

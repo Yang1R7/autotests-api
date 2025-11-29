@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjE0OjMyLjgyMDMwOCIsInVzZXJfaWQiOiIxYWQ3ZmI3ZS02NDA3LTRjMWQtYmZlNS0zZjEyYzhlYzBlZmIifQ._HxKGBCFFvXtf4PpPjfQLQYiiiKiMgI9p_LcasuVmd4' \
+  -H 'content-length: 367' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Idea senior exactly check easy kitchen.","maxScore":77,"minScore":1,"description":"Institution beyond yard choice by despite. Because billion will value never indicate. Marriage management least model sea home remain.","estimatedTime":"9 weeks","previewFileId":"b7d3a00a-df0f-46df-9084-4f2e765e2033","createdByUserId":"1ad7fb7e-6407-4c1d-bfe5-3f12c8ec0efb"}'

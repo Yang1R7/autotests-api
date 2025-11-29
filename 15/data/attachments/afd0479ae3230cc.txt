@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjE0OjMxLjkwNzE4MSIsInVzZXJfaWQiOiI5ODkxMzgxNi00YmE5LTQ2NmYtYmJhNS1kYjIwNzMyZDk0NDEifQ.d-jAeXX8OY-ZUdOnh0O09MCTI3fpOR0i8yrw21OBZwY' \
+  -H 'content-length: 340' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Myself color recognize center must know.","maxScore":86,"minScore":22,"description":"Put face sing agreement. Here other identify data total catch edge. Pm central become fill myself person.","estimatedTime":"1 weeks","previewFileId":"54b51a9c-4d42-4eeb-a2a9-1f237df5de72","createdByUserId":"98913816-4ba9-466f-bba5-db20732d9441"}'

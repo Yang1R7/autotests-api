@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/b8019434-2e92-4067-b937-9a51f973f9a3' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjE0OjI5LjI5NzYwNyIsInVzZXJfaWQiOiJiMjY4OTYwNS1mNWUyLTRkOTctYWQ2OS01ODJjYmU1ZDM3NTIifQ.b348DRlPDc5XSUwpvutT8iKnjfXHvZdOSMwRDW01-TU' \
+  -H 'content-length: 211' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Official watch camera father see never red.","maxScore":85,"minScore":30,"description":"Republican must market paper American able successful. Throw protect marriage pretty.","estimatedTime":"9 weeks"}'

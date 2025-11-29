@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjE0OjMxLjYzNDI0MyIsInVzZXJfaWQiOiI3OTlkMjFkYS0zN2UyLTQzMmMtYmQyMi0wZTg3N2YwOTY4YWUifQ.Tk1kwEzISqHMKMCDoWH1obsXD5QHteOAHSUa3lXsdkw' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Child him man will.","maxScore":86,"minScore":28,"description":"Everything federal history seek film front than. General night third.\nGet contain value specific simply discover. College score beautiful success cold evidence bring fund. Us support reduce.","estimatedTime":"7 weeks","previewFileId":"8d9928db-d038-4a4d-bba9-0c4aaa4937ad","createdByUserId":"799d21da-37e2-432c-bd22-0e877f0968ae"}'

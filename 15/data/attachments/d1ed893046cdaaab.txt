@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjE0OjI5LjI5NzYwNyIsInVzZXJfaWQiOiJiMjY4OTYwNS1mNWUyLTRkOTctYWQ2OS01ODJjYmU1ZDM3NTIifQ.b348DRlPDc5XSUwpvutT8iKnjfXHvZdOSMwRDW01-TU' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Risk go face painting.","maxScore":75,"minScore":14,"description":"Dream meet reach dark almost several.\nVarious best name always.\nDiscussion election author conference team paper identify popular. Sense law her around. Operation memory better us car energy range.","estimatedTime":"3 weeks","previewFileId":"d0bfa15f-169d-4b02-9208-faa02f7246ca","createdByUserId":"b2689605-f5e2-4d97-ad69-582cbe5d3752"}'

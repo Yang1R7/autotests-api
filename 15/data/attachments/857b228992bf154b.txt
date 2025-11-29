@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjE0OjMzLjA5NDI2OSIsInVzZXJfaWQiOiI2MTYzMGEyMy0xNDUwLTRmYzItOTE1NS04YjFkYTkxMjRjZTgifQ.7MgPG5xj9P8rScnIT25smxTXdYNPquP8umJiIYhVynY' \
+  -H 'content-length: 402' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Structure officer what institution green.","maxScore":88,"minScore":25,"description":"Off picture peace across. Right small present daughter idea heavy. Speech financial quality already.\nPartner positive many federal control. Few everything nature Mr.","estimatedTime":"7 weeks","previewFileId":"0b8a754d-dbaa-4611-89e9-dbdb1b69682d","createdByUserId":"61630a23-1450-4fc2-9155-8b1da9124ce8"}'
