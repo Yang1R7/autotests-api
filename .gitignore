@@ -11,3 +11,10 @@ venv/
 # allure
 allure-results
 allure-report
+
+# coverage
+coverage.html
+coverage-results
+coverage-report.json
+coverage-history.json
+

@@ -7,6 +7,8 @@ from clients.private_http_builder import get_private_http_client, Authentication
 
 from clients.users.users_schema import UpdateRequestSchema, GetUserResponseSchema
 from tools.routes import APIRoutes
+from clients.api_coverage import tracker
+
 
 
 class PrivateUsersClient(APIClient):
@@ -14,6 +16,7 @@ class PrivateUsersClient(APIClient):
     Клиент для работы с /api/v1/users
     """
     @allure.step("Get user me")
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/me")
     def get_user_me_api(self) -> Response:
         return self.get(f"{APIRoutes.USERS}/me")
 
@@ -23,6 +26,7 @@ class PrivateUsersClient(APIClient):
     """
 
     @allure.step("Get user by id {user_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def get_user_api(self, user_id: str) -> Response:
         return self.get(f"{APIRoutes.USERS}/{user_id}")
 
@@ -33,6 +37,7 @@ class PrivateUsersClient(APIClient):
     """
 
     @allure.step("Update user by id {user_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def update_user_api(self, user_id: str, request: UpdateRequestSchema) -> Response:
         return self.patch(f"{APIRoutes.USERS}/{user_id}", json=request.model_dump(by_alias=True))
 
@@ -44,6 +49,7 @@ class PrivateUsersClient(APIClient):
     """
 
     @allure.step("Delete user by id {user_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def delete_user_api(self, user_id: str) -> Response:
         return self.delete(f"{APIRoutes.USERS}/{user_id}")
 
