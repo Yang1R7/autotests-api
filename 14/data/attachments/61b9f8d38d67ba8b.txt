@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjM0LjI0NzQ3MSIsInVzZXJfaWQiOiI0NzAxODU4Ny1mMzJhLTQyNzUtYWI4NS03OWE3NGI3MThmNjgifQ.Mb-qoMYO5RZMReu-4Zh1X_qdfb5eb66OuPWeG-Bw98I' \
+  -H 'content-length: 432' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Anyone nice television seem every campaign.","maxScore":99,"minScore":20,"description":"Record box rich cold my local. Style experience security successful on. Weight effect measure gun issue.\nMedical dark product hour full realize social. Against will meeting next apply interest.","estimatedTime":"9 weeks","previewFileId":"4fd0d133-3ae1-4dfc-8a3b-17e440735b04","createdByUserId":"47018587-f32a-4275-ab85-79a74b718f68"}'

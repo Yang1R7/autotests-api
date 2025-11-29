@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjMyLjc2NTY2OSIsInVzZXJfaWQiOiI4NmMyODBhNC1kYTUxLTRjNmQtYTg1ZC0xZTE0MzJkNzg2NjIifQ.71OxXjCDTEfvo7TDkxn8r2w7YXBautByU-8_Pg4N27s' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Operation draw fire discuss only what one.","maxScore":87,"minScore":12,"description":"Front particular attention rock situation attention. Mention its program.\nBusiness general society call skill office deal. Him few wear more. Value do measure amount thank chance memory.","estimatedTime":"4 weeks","previewFileId":"50e6189e-5212-4102-8298-46668b40b755","createdByUserId":"86c280a4-da51-4c6d-a85d-1e1432d78662"}'

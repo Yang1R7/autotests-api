@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjMzLjY2MjE2MiIsInVzZXJfaWQiOiJjMGZiZDNmZS1iY2UxLTQyODQtOTVhMy1mOTQyNzc3Y2MwYzgifQ.2QhPvERz3HMJjqUaatQ1IPkHb7kNDmfq_eEuCiZl57Y' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"War across serious word light service big.","maxScore":73,"minScore":10,"description":"Reality seat personal along. Agency you though eat wife operation really.\nLand rich matter even. Focus during general under quickly. Establish suddenly operation eat kid.","estimatedTime":"4 weeks","previewFileId":"fe9260c5-ba8e-49ee-86bd-8932e6c46144","createdByUserId":"c0fbd3fe-bce1-4284-95a3-f942777cc0c8"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjM0LjgyOTg5OCIsInVzZXJfaWQiOiI5NWRjNDMxMy00NDc2LTQ5YzAtOTdmMy1hNDdlY2EwMDM5ZGEifQ.Ptc0pzpsbJ491cN4tpXTk04LY1qIcZ-p1acWRTMIxOM' \
+  -H 'content-length: 404' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Allow side each bar physical.","maxScore":78,"minScore":12,"description":"Either treatment manager off finish clearly myself. Child available above individual action language. Movie recently their.\nPositive until group base lay imagine. Great much wait.","estimatedTime":"4 weeks","previewFileId":"231d8cb1-c430-4579-85e2-a3fdfd153680","createdByUserId":"95dc4313-4476-49c0-97f3-a47eca0039da"}'

@@ -1,0 +1,22 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:27 Make PATCH request to http://localhost:8000/api/v1/exercises/f4275e44-c644-4e33-a92c-509b8c5a36ae
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises/f4275e44-c644-4e33-a92c-509b8c5a36ae
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:87 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Law there main rather rather.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 78
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 28
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 96
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Break son air stage reflect you data. Home air town office student.
+Its fish from tax. Set for look financial skill production.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 7 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjM2LjY5MjAyNCIsInVzZXJfaWQiOiI1NGRlNzZjYy00MmVkLTQ4ZmYtOTNlNS04NTVmMDczNDQ1NTAifQ.G4fBZ_bmUUXYCS_9jS769RYFUP1-mi2rCussBsJthoQ' \
+  -H 'content-length: 375' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Charge detail sister institution.","courseId":"47d890cc-83e8-4769-90fa-1f7069999931","maxScore":80,"minScore":25,"orderIndex":83,"description":"Hold short house control. Direction analysis good tree room water. Present situation such.\nTable fire likely employee man. Take its also upon response democratic behind. Everything life peace.","estimatedTime":"2 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjM2LjY5MjAyNCIsInVzZXJfaWQiOiI1NGRlNzZjYy00MmVkLTQ4ZmYtOTNlNS04NTVmMDczNDQ1NTAifQ.G4fBZ_bmUUXYCS_9jS769RYFUP1-mi2rCussBsJthoQ' \
+  -H 'content-length: 316' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Interview Congress certain red.","maxScore":86,"minScore":21,"description":"Eye kid cup moment off. Real perhaps front your. Serious him truth those officer rise the.","estimatedTime":"9 weeks","previewFileId":"ff123ee3-accb-453f-abe8-891b893ffb34","createdByUserId":"54de76cc-42ed-48ff-93e5-855f07344550"}'

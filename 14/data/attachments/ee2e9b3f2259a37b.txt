@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:78 Check create course response
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Anyone nice television seem every campaign.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 99
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 20
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Record box rich cold my local. Style experience security successful on. Weight effect measure gun issue.
+Medical dark product hour full realize social. Against will meeting next apply interest.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 9 weeks
+INFO     BASE_ASSERTIONS:base.py:35 Check that "preview_file_id" equals to 4fd0d133-3ae1-4dfc-8a3b-17e440735b04
+INFO     BASE_ASSERTIONS:base.py:35 Check that "created_by_user_id" equals to 47018587-f32a-4275-ab85-79a74b718f68
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

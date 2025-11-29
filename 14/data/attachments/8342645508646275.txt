@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjM3LjI4NjQ4OCIsInVzZXJfaWQiOiIzMDU5ZjAwZC0zNjgzLTQzOTUtOWRhNy1jYzc2ZGRiNmJkMTMifQ.dClNebuwpnliaYfs6yrVnFm4WsT7Z8ByPZAenebt0QQ' \
+  -H 'content-length: 366' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Upon control degree offer hospital consider physical stay.","courseId":"6d7fc774-af01-4cee-bb0a-893bfc39f393","maxScore":81,"minScore":12,"orderIndex":57,"description":"Now investment although pull risk political. Often plant though traditional moment product significant. Fact read interesting if. Use civil another phone play.","estimatedTime":"9 weeks"}'

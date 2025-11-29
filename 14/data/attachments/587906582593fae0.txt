@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjM1LjQxNzg1NSIsInVzZXJfaWQiOiI4ZDc4ZWE5Mi0wMmM4LTRjMGUtOGMzMy0xZTJmZGJlODA0YTYifQ.2Vs2-iCPUV8Rh1JgJTlnbtqHz1BckuSL3CcqWcnQShQ' \
+  -H 'content-length: 421' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Firm now traditional rise development no tonight.","maxScore":59,"minScore":30,"description":"People recent some hair deep inside store. Person evening low lay wall. Skill edge large decade.\nCampaign campaign board author represent home wife. Marriage eye price product.","estimatedTime":"5 weeks","previewFileId":"b233aa0b-148d-4da6-9270-064b09dccd36","createdByUserId":"8d78ea92-02c8-4c0e-8c33-1e2fdbe804a6"}'

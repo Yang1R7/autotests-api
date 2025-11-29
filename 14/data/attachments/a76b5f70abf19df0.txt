@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjEwOjM2LjAwMzI1MCIsInVzZXJfaWQiOiIxM2Y4MTUzNy03NmQ2LTQ2MWItYTA5MS0wZmU2MDI0Mjg0NWQifQ.-5kAoWAd1UICf23tAlyNPHFhykVUMb98C7NbI3W4qtU' \
+  -H 'content-length: 345' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Again space break young.","maxScore":69,"minScore":9,"description":"Something teacher suffer exactly. Whose who economy significant budget maintain or. Fine peace century girl like believe able.","estimatedTime":"10 weeks","previewFileId":"c1ee0006-53e6-42a2-b67f-878aad0716ef","createdByUserId":"13f81537-76d6-461b-a091-0fe60242845d"}'
