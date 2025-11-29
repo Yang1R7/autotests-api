@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjMyOjUxLjc1Nzg4MyIsInVzZXJfaWQiOiIxYWI5YjBlMC01ZjZiLTQ4ZTMtYjViMC0yZmIyZjk1Y2JjMjEifQ.Fq4IWjBVvwZRmUCv_qHN-6qHeyyYbkTflZebjkwiD1A' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Leg some general.","maxScore":99,"minScore":10,"description":"Reflect region bag. Daughter on organization television relate. Learn move knowledge perform.\nRight green purpose pressure necessary how partner. Television fast TV citizen first.","estimatedTime":"4 weeks","previewFileId":"fb2f4771-e8fb-48fb-bcdf-281e60f003a3","createdByUserId":"1ab9b0e0-5f6b-48e3-b5b0-2fb2f95cbc21"}'

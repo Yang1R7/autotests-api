@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/46ae5e00-c866-4a64-b41f-8c897a5769fb' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjMyOjQ5LjY3MDQ4NSIsInVzZXJfaWQiOiI1YWRmZWVmZS04MGJjLTQyZGQtYTFkZC1hOWU0NjI5YWJmYzEifQ.VD-e3fbowKs_jl6DiszEOZmp1PlEI4d9_PEEQug-hHA' \
+  -H 'content-length: 243' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Husband concern rest describe.","maxScore":100,"minScore":11,"description":"Full employee rich rate matter gun. Conference drop record do. Focus part the tough consumer fund memory. Kitchen number remain.","estimatedTime":"10 weeks"}'

@@ -1,0 +1,26 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:27 Make GET request to http://localhost:8000/api/v1/exercises?courseId=1a7b227c-b717-4bd3-9f0b-3ff945f858d3
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=1a7b227c-b717-4bd3-9f0b-3ff945f858d3
+INFO     BASE_ASSERTIONS:base.py:17 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:120 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:69 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:48 Check exercise
+INFO     BASE_ASSERTIONS:base.py:35 Check that "id" equals to b5e3344b-dbcd-4546-946c-3e469eb67ff4
+INFO     BASE_ASSERTIONS:base.py:35 Check that "title" equals to Fear manage statement mean.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "course_id" equals to 1a7b227c-b717-4bd3-9f0b-3ff945f858d3
+INFO     BASE_ASSERTIONS:base.py:35 Check that "max_score" equals to 62
+INFO     BASE_ASSERTIONS:base.py:35 Check that "min_score" equals to 19
+INFO     BASE_ASSERTIONS:base.py:35 Check that "order_index" equals to 16
+INFO     BASE_ASSERTIONS:base.py:35 Check that "description" equals to Feeling together north game. Scientist campaign gas tree. Blood hold upon cup.
+With avoid political fill risk. Brother avoid state. Common scientist box wife draw carry recently agreement.
+INFO     BASE_ASSERTIONS:base.py:35 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validate JSON schema

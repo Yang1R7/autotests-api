@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjMyOjUyLjkzNzY3NSIsInVzZXJfaWQiOiI2ZTZiMDEwYy04NTRjLTRlYTctODM0OS1lNmU0MDY1M2RiNGEifQ.vk9aQGYMo5_etAkUIojKSp9ZbLh5B_Naq3ocKpj2rXE' \
+  -H 'content-length: 410' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Measure dark list prove gun.","maxScore":53,"minScore":1,"description":"Trial statement reason group. As plan now us join.\nFear yet war really understand democratic. Responsibility lot military imagine challenge. Collection present fine leave item bring song.","estimatedTime":"4 weeks","previewFileId":"567823e6-68c4-4879-9364-aa040cf61890","createdByUserId":"6e6b010c-854c-4ea7-8349-e6e40653db4a"}'

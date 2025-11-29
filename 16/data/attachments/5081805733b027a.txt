@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjMyOjUyLjM1MDMxNiIsInVzZXJfaWQiOiIyMjFmZWM3Mi0zNmVkLTQ3NDgtYjUzYi02NjJjYTAwOGUyODkifQ.LOQlWXkCHU-TKqFphTQDszh87pKJHap4435ATxMAmKM' \
+  -H 'content-length: 351' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Follow as field central color particular among.","maxScore":60,"minScore":20,"description":"Them natural interesting real. Bring development send outside. Space strategy former inside onto surface old.","estimatedTime":"2 weeks","previewFileId":"89329366-6c50-4ecd-a694-e02c06baae3c","createdByUserId":"221fec72-36ed-4748-b53b-662ca008e289"}'

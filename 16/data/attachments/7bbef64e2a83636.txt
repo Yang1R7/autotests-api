@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTI5VDEzOjMyOjUzLjYxNjI5NyIsInVzZXJfaWQiOiIwYjM5ZDBmNy05YjcyLTQ4NTUtYTU5YS1kMjZhY2U1YjI3NzgifQ.A7_GcasK4G99ru0BhbWaY1TsMlT24TgyfY9WuOl09gw' \
+  -H 'content-length: 328' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Rest old same thing.","maxScore":95,"minScore":30,"description":"Themselves boy at tend field. Identify pull sometimes her mother walk begin. Fill south serious cold heavy idea.","estimatedTime":"10 weeks","previewFileId":"c5cc011c-7a9b-4cdc-ab77-8880e139a59e","createdByUserId":"0b39d0f7-9b72-4855-a59a-d26ace5b2778"}'
